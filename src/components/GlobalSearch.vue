@@ -36,7 +36,6 @@
 export default {
   name: 'GlobalSearch',
   data: () => ({
-    resultsVirtualScrollHeight: 0,
     keyword: '',
     results: [
       {
@@ -134,21 +133,20 @@ export default {
       default: 0
     }
   },
-  mounted() {
-    this.setResultsVirtualScrollHeight()
-  },
-  methods: {
-    setResultsVirtualScrollHeight() {
+  computed: {
+    resultsVirtualScrollHeight() {
       // const otherHeight
       //   = this.$refs.searchInput.offsetHeight || 48
       //   + 40
       const otherHeight = this.extHeight + 48 + 40
       if (this.$vuetify.breakpoint.mobile) {
-        this.resultsVirtualScrollHeight = this.$vuetify.breakpoint.height - otherHeight
+        return this.$vuetify.breakpoint.height - otherHeight
       } else {
-        this.resultsVirtualScrollHeight = this.$vuetify.breakpoint.height * 0.6 - otherHeight
+        return this.$vuetify.breakpoint.height * 0.6 - otherHeight
       }
-    },
+    }
+  },
+  methods: {
     search() {
     }
   }

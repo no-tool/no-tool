@@ -2,13 +2,9 @@
   <v-app-bar
       app
       flat
-      shrink-on-scroll
-      :src="headerBgImg"
-      scroll-threshold="500"
   >
     <v-btn
         v-if="$vuetify.breakpoint.mobile"
-        color="header-icon"
         icon
         @click="TOGGLE_DRAWER"
     >
@@ -16,27 +12,16 @@
     </v-btn>
     <!-- <v-app-bar-nav-icon
       v-if="$vuetify.breakpoint.mobile"
-      class="header-icon"
       @click="TOGGLE_DRAWER"
     /> -->
     <!-- <v-app-bar-title>IACG</v-app-bar-title> -->
-    <v-app-bar-title>
-      <router-link to="/">
-        <v-img
-            alt="logo_32x32.png"
-            max-height="32"
-            max-width="32"
-            :src="require('../../assets/img/logo_32x32.png')"
-        />
-      </router-link>
-    </v-app-bar-title>
 
     <v-spacer/>
 
     <div>
-      <ThemeToggle color="header-icon"/>
+      <ThemeToggle/>
 
-      <v-btn color="header-icon" icon @click="isOpenSearchDialog = true">
+      <v-btn icon @click="isOpenSearchDialog = true">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </div>
@@ -89,11 +74,7 @@ export default {
     isOpenSearchDialog: false,
     isOpenContributionDialog: false
   }),
-  computed: {
-    headerBgImg() {
-      return this.$vuetify.theme.dark ? require('@/assets/img/header_bg_1920x128_yande.re.620509_lazy.png') : require('@/assets/img/header_bg_1920x128_yande.re.620509.png')
-    }
-  },
+  computed: {},
   methods: {
     ...mapMutations('boxAside', ['TOGGLE_DRAWER'])
   }

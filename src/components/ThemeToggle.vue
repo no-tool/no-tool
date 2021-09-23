@@ -16,7 +16,8 @@ import storage from "good-storage"
 export default {
   name: "ThemeToggle",
   props: {
-    color: String
+    color: String,
+    default: undefined
   },
   methods: {
     ...mapMutations('boxAside', ['TOGGLE_DRAWER']),

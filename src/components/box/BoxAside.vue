@@ -1,7 +1,14 @@
 <template>
   <v-navigation-drawer v-model="drawer" app>
-    <div class="pa-4 text-center">
-      x
+    <div class="pa-4 d-flex justify-center">
+      <router-link to="/">
+        <v-img
+            alt="logo_32x32.png"
+            max-height="32"
+            max-width="32"
+            :src="require('../../assets/img/logo_32x32.png')"
+        />
+      </router-link>
     </div>
 
     <v-divider/>
@@ -28,12 +35,6 @@ export default {
   },
   data: () => ({
     itemTree: [
-      {
-        id: '1',
-        path: '/',
-        title: '首页',
-        action: 'mdi-ticket'
-      },
       {
         id: '2',
         path: '/t2',
