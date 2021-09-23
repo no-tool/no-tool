@@ -34,19 +34,6 @@
     <v-spacer/>
 
     <div>
-      <v-btn
-          color="header-icon"
-          icon
-          :to="{
-            path: '/edit',
-            query: {
-              height: $vuetify.breakpoint.height - 128 - 12 * 2
-            }
-          }"
-      >
-        <v-icon>mdi-pencil-outline</v-icon>
-      </v-btn>
-
       <ThemeToggle color="header-icon"/>
 
       <v-btn color="header-icon" icon @click="isOpenSearchDialog = true">

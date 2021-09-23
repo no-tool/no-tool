@@ -1,5 +1,5 @@
 <template>
-  <div v-resize="onResize">
+  <div>
     <div ref="searchInput" class="mb-4">
       <v-text-field
           type="text"
@@ -149,13 +149,7 @@ export default {
         this.resultsVirtualScrollHeight = this.$vuetify.breakpoint.height * 0.6 - otherHeight
       }
     },
-    onResize() {
-      this.setResultsVirtualScrollHeight()
-    },
     search() {
-      if (this.keyword) {
-        elMsg(this.keyword)
-      }
     }
   }
 }
