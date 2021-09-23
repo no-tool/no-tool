@@ -2,6 +2,7 @@
   <v-app-bar
       app
       flat
+      hide-on-scroll
   >
     <v-btn
         v-if="$vuetify.breakpoint.mobile"

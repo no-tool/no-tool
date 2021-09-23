@@ -3,10 +3,9 @@
     <div class="pa-4 d-flex justify-center">
       <router-link to="/">
         <v-img
-            alt="logo_32x32.png"
-            max-height="32"
-            max-width="32"
-            :src="require('../../assets/img/logo_32x32.png')"
+            alt="logo_200x200.png"
+            max-width="100"
+            :src="logoImgSrc"
         />
       </router-link>
     </div>
@@ -98,10 +97,13 @@ export default {
       set(value) {
         this.UPDATE_DRAWER(value)
       }
+    },
+    logoImgSrc() {
+      return this.$vuetify.theme.dark ? require('../../assets/img/no-tool-logo-500x200-white.png') : require('../../assets/img/no-tool-logo-500x200-black.png')
     }
   },
   methods: {
-    ...mapMutations('boxAside', ['UPDATE_DRAWER', 'UPDATE_IS_OPEN_LOGIN_DIALOG'])
+    ...mapMutations('boxAside', ['UPDATE_DRAWER'])
   }
 }
 </script>
