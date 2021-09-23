@@ -1,14 +1,17 @@
 <template>
   <div>
-    123
+    <v-footer>
+      123
+    </v-footer>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+    name: 'BoxFooter'
 }
 </script>
 
 <style scoped>
+
 </style>
