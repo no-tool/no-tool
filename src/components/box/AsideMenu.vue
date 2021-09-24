@@ -17,7 +17,7 @@
         <v-list-group
             v-if="level1.children"
             :group="level1.path"
-            prepend-icon="mdi-account-circle"
+            :prepend-icon="level1.mdi"
         >
           <template v-slot:activator>
             <v-list-item-title>{{ level1.title }}</v-list-item-title>
@@ -69,10 +69,7 @@ export default {
   name: "AsideMenu",
   data: () => ({
     menu: require('@/assets/aside-menu.json')
-  }),
-  mounted() {
-    console.log(this.menu)
-  }
+  })
 }
 </script>
 

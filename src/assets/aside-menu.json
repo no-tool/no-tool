@@ -7,9 +7,34 @@
     "level": 1
   },
   {
+    "id": 44,
+    "path": "/tool/github",
+    "title": "GitHub",
+    "mdi": "mdi-github",
+    "level": 1,
+    "children": [
+      {
+        "id": 99,
+        "path": "/tool/github/user",
+        "title": "用户",
+        "level": 2,
+        "children": [
+          {
+            "id": 100,
+            "path": "/tool/github/user/get-a-user",
+            "title": "获取一个用户",
+            "mdi": "",
+            "level": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 2,
     "path": "/2",
     "title": "2",
+    "mdi": "x",
     "level": 1,
     "children": [
       {
@@ -30,6 +55,7 @@
     "id": 5,
     "path": "/5",
     "title": "3",
+    "mdi": "x",
     "level": 1,
     "children": [
       {

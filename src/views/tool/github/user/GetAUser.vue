@@ -10,7 +10,7 @@
 import {getAUser} from '@/request/github/rest-api/user'
 
 export default {
-  name: 'User',
+  name: 'GetAUser',
   data: () => ({
     githubUsername: '',
     userInfo: {}
