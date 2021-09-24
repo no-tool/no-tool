@@ -17,9 +17,11 @@ const opts = {
         dark: storage.get(storageConstant.THEME_DARK, true),
         themes: {
             light: {
-                'bg-color': '#f5f5f5'
+                'bg-color': '#f5f5f5',
+                primary: colors.purple
             },
             dark: {
+                primary: colors.purple.lighten4
             }
         }
     }
