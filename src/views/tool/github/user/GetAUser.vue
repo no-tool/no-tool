@@ -59,7 +59,7 @@ export default {
     githubUsername: '',
     result: null,
     loading: false,
-    msgErr: ''
+    msgErr: null
   }),
   methods: {
     search() {
@@ -67,6 +67,7 @@ export default {
         this.loading = true
         getAUser(this.githubUsername)
             .then(res => {
+              this.msgErr = null
               this.result = res.data
             })
             .catch(e => {
