@@ -7,7 +7,7 @@
         nav
     >
       <div v-for="level1 in menu" :key="level1.path">
-        <v-list-item v-if="!level1.children" :to="level1.path" exact>
+        <v-list-item v-if="!level1.children" :to="level1.path">
           <v-list-item-icon>
             <v-icon>{{ level1.mdi }}</v-icon>
           </v-list-item-icon>
@@ -24,7 +24,7 @@
           </template>
 
           <div v-for="level2 in level1.children" :key="level2.path">
-            <v-list-item v-if="!level2.children" :to="level2.path" exact>
+            <v-list-item v-if="!level2.children" :to="level2.path">
               <v-list-item-icon>
                 <v-icon></v-icon>
               </v-list-item-icon>
