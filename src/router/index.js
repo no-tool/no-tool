@@ -10,6 +10,28 @@ const routes = [
         component: Home
     },
     {
+        path: '/tool',
+        component: () => import('@/views/tool-view'),
+        children: [
+            {
+                path: 'github',
+                component: () => import('@/views/tool-view/Level1'),
+                children: [
+                    {
+                        path: 'user',
+                        component: () => import('@/views/tool-view/Level2'),
+                        children: [
+                            {
+                                path: 'get-a-user',
+                                component: () => import('@/views/tool/github/user/GetAUser')
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         // 会匹配所有路径 一般用韵404
         path: '*',
         component: () => import('@/views/View404')
