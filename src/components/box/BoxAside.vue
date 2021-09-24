@@ -12,7 +12,8 @@
 
     <v-divider/>
 
-    <ListTree :itemTree="itemTree"/>
+<!--    <ListTree :itemTree="itemTree"/>-->
+    <AsideMenu/>
 
     <template v-slot:append>
       <BoxFooter/>
@@ -24,27 +25,29 @@
 import {mapMutations} from 'vuex'
 
 import BoxFooter from './BoxFooter'
-import ListTree from '../ListTree'
+// import ListTree from '../ListTree'
+import AsideMenu from "./AsideMenu"
 
 export default {
   name: 'BoxAside',
   components: {
     BoxFooter,
-    ListTree
+    AsideMenu
+    // ListTree
   },
   data: () => ({
     itemTree: [
       {
         id: '2',
         path: '/t2',
-        title: 't2',
+        title: 'GitHub',
         action: 'mdi-silverware-fork-knife',
         children: [
           {
             id: '3',
             path: '/t2-1',
-            title: 't2-1',
-            action: 'mdi-ticket',
+            title: 'Rest API',
+            children: []
           },
           {
             id: '4',

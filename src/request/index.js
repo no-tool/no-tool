@@ -14,14 +14,23 @@ service.interceptors.request.use(
     }
 )
 
+// service.interceptors.response.use(
+//     response => {
+//         const data = response.data
+//         if (data.success) {
+//             return data.data
+//         } else {
+//             return Promise.reject(data.message)
+//         }
+//     },
+//     error => {
+//         return Promise.reject(error)
+//     }
+// )
+
 service.interceptors.response.use(
     response => {
-        const data = response.data
-        if (data.success) {
-            return data.data
-        } else {
-            return Promise.reject(data.message)
-        }
+        return response
     },
     error => {
         return Promise.reject(error)

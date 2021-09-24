@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <BoxAside />
-    <BoxHeader />
+    <BoxAside/>
+    <BoxHeader/>
     <v-main>
       <!-- v-container组件 加 fill-height属性 实现垂直居中 -->
       <v-container>
         <v-scroll-x-transition mode="out-in">
-          <router-view />
+          <router-view/>
         </v-scroll-x-transition>
       </v-container>
     </v-main>
@@ -19,8 +19,7 @@ import BoxHeader from './BoxHeader'
 
 export default {
   name: "Box",
-  data: () => ({
-  }),
+  data: () => ({}),
   components: {
     BoxAside,
     BoxHeader

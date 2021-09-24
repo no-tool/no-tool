@@ -1,8 +1,6 @@
 <template>
   <div>
-    <p v-for="i in 500" :key="i">
-      {{i}}
-    </p>
+    123
   </div>
 </template>
 
