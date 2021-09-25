@@ -12,8 +12,7 @@
 
     <v-divider/>
 
-<!--    <ListTree :itemTree="itemTree"/>-->
-    <AsideMenu/>
+    <AsideMenu :menu="require('@/assets/mock/aside-menu.json')"/>
 
     <template v-slot:append>
       <BoxFooter/>
@@ -25,7 +24,6 @@
 import {mapMutations} from 'vuex'
 
 import BoxFooter from './BoxFooter'
-// import ListTree from '../ListTree'
 import AsideMenu from "./AsideMenu"
 
 export default {
@@ -33,64 +31,8 @@ export default {
   components: {
     BoxFooter,
     AsideMenu
-    // ListTree
   },
   data: () => ({
-    itemTree: [
-      {
-        id: '2',
-        path: '/t2',
-        title: 'GitHub',
-        action: 'mdi-silverware-fork-knife',
-        children: [
-          {
-            id: '3',
-            path: '/t2-1',
-            title: 'Rest API',
-            children: []
-          },
-          {
-            id: '4',
-            path: '/t2-2',
-            title: '2-2',
-            action: 'mdi-silverware-fork-knife',
-            children: [
-              {
-                id: '5',
-                path: '/t2-2-1',
-                title: 't2-2-1',
-                action: 'mdi-silverware-fork-knife'
-              },
-              {
-                id: '6',
-                path: '/t2-2-2',
-                title: 't2-2-2',
-                action: 'mdi-silverware-fork-knife',
-                children: [
-                  {
-                    id: '7',
-                    path: '/t2-2-2-1',
-                    title: 't2-2-2-1',
-                    action: ''
-                  }, {
-                    id: '8',
-                    path: '/t2-2-2-2',
-                    title: 't2-2-2-2',
-                    action: 'mdi-silverware-fork-knife'
-                  },
-                ]
-              },
-              {
-                id: '9',
-                path: '/t2-2-3',
-                title: 't2-2-3',
-                action: 'mdi-silverware-fork-knife',
-              },
-            ]
-          }
-        ]
-      }
-    ]
   }),
   computed: {
     drawer: {

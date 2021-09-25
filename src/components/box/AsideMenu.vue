@@ -67,9 +67,7 @@
 <script>
 export default {
   name: "AsideMenu",
-  data: () => ({
-    menu: require('@/assets/aside-menu.json')
-  })
+  props: ['menu']
 }
 </script>
 
