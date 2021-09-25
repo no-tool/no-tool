@@ -3,6 +3,7 @@
     <v-text-field
         label="GitHub username"
         v-model.trim="githubUsername"
+        clearable
         append-outer-icon="mdi-account-search-outline"
         @click:append-outer="search"
         @keydown.enter="search"

@@ -1,26 +1,22 @@
 [
   {
-    "id": 1,
     "path": "/",
     "title": "Home",
     "mdi": "mdi-home",
     "level": 1
   },
   {
-    "id": 44,
     "path": "/tool/github",
     "title": "GitHub",
     "mdi": "mdi-github",
     "level": 1,
     "children": [
       {
-        "id": 99,
         "path": "/tool/github/user",
         "title": "用户",
         "level": 2,
         "children": [
           {
-            "id": 100,
             "path": "/tool/github/user/get-a-user",
             "title": "获取一个用户",
             "mdi": "",
@@ -31,65 +27,57 @@
     ]
   },
   {
-    "id": 2,
-    "path": "/2",
-    "title": "2",
-    "mdi": "x",
+    "path": "/tool/math",
+    "title": "数学",
+    "mdi": "mdi-math-compass",
     "level": 1,
     "children": [
       {
-        "id": 3,
-        "path": "/2/3",
-        "title": "3",
-        "level": 2
-      },
-      {
-        "id": 4,
-        "path": "/2/4",
-        "title": "4",
-        "level": 2
+        "path": "/tool/math/calc",
+        "title": "计算",
+        "level": 2,
+        "children": [
+          {
+            "path": "/tool/math/calc/word-comb",
+            "title": "字符组合",
+            "level": 3
+          }
+        ]
       }
     ]
   },
   {
-    "id": 5,
     "path": "/5",
     "title": "3",
     "mdi": "x",
     "level": 1,
     "children": [
       {
-        "id": 6,
         "path": "/5/6",
         "title": "6",
         "level": 2
       },
       {
-        "id": 7,
         "path": "/5/7",
         "title": "7",
         "level": 2
       },
       {
-        "id": 8,
         "path": "/5/8",
         "title": "8",
         "level": 2
       },
       {
-        "id": 9,
         "path": "/5/9",
         "title": "9",
         "level": 2,
         "children": [
           {
-            "id": 10,
             "path": "/5/9/10",
             "title": "10",
             "level": 3
           },
           {
-            "id": 11,
             "path": "/5/9/11",
             "title": "11",
             "level": 3

@@ -28,6 +28,22 @@ const routes = [
                         ]
                     }
                 ]
+            },
+            {
+                path: 'math',
+                component: () => import('@/views/tool-view/Level1'),
+                children: [
+                    {
+                        path: 'calc',
+                        component: () => import('@/views/tool-view/Level2'),
+                        children: [
+                            {
+                                path: 'word-comb',
+                                component: () => import('@/views/tool/math/calc/WordComb')
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
