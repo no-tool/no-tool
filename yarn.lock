@@ -8192,6 +8192,11 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-m-message@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.nlark.com/vue-m-message/download/vue-m-message-3.1.0.tgz#8061720ac777b624fad95375594ea142c7d55dc7"
+  integrity sha1-gGFyCsd3tiT62VN1WU6hQsfVXcc=
+
 vue-router@^3.5.2:
   version "3.5.2"
   resolved "https://registry.nlark.com/vue-router/download/vue-router-3.5.2.tgz?cache=0&sync_timestamp=1628495505697&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-router%2Fdownload%2Fvue-router-3.5.2.tgz#5f55e3f251970e36c3e8d88a7cd2d67a350ade5c"

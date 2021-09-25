@@ -13,6 +13,7 @@
     "good-storage": "^1.1.1",
     "qs": "^6.10.1",
     "vue": "^2.6.11",
+    "vue-m-message": "^3.1.0",
     "vue-router": "^3.5.2",
     "vuetify": "^2.5.8",
     "vuex": "^3.6.2"

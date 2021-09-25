@@ -23,7 +23,7 @@
           >
         </v-avatar>
       </div>
-      <v-simple-table>
+      <v-simple-table class="mt-6">
         <template v-slot:default>
           <thead>
           <tr>
@@ -65,6 +65,8 @@ export default {
     search() {
       if (this.githubUsername) {
         this.loading = true
+        this.msgErr = null
+        this.result = null
         getAUser(this.githubUsername)
             .then(res => {
               this.msgErr = null
