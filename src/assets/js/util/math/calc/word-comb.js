@@ -1,4 +1,4 @@
-// <!-- Paste this code into an external JavaScript file named: wordComb.js  -->
+// <!-- Paste this code into an external JavaScript file named: word-comb.js  -->
 
 /* This script and many more are available free online at
 The JavaScript Source :: http://javascript.internet.com

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import {calculateCombinations, createWordList} from '@/assets/js/util/wordComb'
+import {calculateCombinations, createWordList} from '@/assets/js/util/math/calc/word-comb'
 // import _ from 'lodash'
 
 export default {
