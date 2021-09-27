@@ -28,7 +28,7 @@
 
 <script>
 import {calculateCombinations, createWordList} from '@/assets/js/util/math/calc/word-comb'
-// import _ from 'lodash'
+import _ from 'lodash'
 
 export default {
   name: "WordComb",

@@ -7,22 +7,27 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
+        meta: {name: '首页'},
         component: Home
     },
     {
         path: '/tool',
+        meta: {name: '工具'},
         component: () => import('@/views/tool-view'),
         children: [
             {
                 path: 'github',
+                meta: {name: 'GitHub'},
                 component: () => import('@/views/tool-view/Level1'),
                 children: [
                     {
                         path: 'user',
+                        meta: {name: '用户'},
                         component: () => import('@/views/tool-view/Level2'),
                         children: [
                             {
                                 path: 'get-a-user',
+                                meta: {name: '获取一个用户'},
                                 component: () => import('@/views/tool/github/user/GetAUser')
                             }
                         ]
@@ -31,14 +36,17 @@ const routes = [
             },
             {
                 path: 'math',
+                meta: {name: '数学'},
                 component: () => import('@/views/tool-view/Level1'),
                 children: [
                     {
                         path: 'calc',
+                        meta: {name: '计算'},
                         component: () => import('@/views/tool-view/Level2'),
                         children: [
                             {
                                 path: 'word-comb',
+                                meta: {name: '字符组合'},
                                 component: () => import('@/views/tool/math/calc/WordComb')
                             }
                         ]
