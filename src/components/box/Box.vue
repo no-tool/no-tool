@@ -3,9 +3,9 @@
     <BoxAside/>
     <BoxHeader/>
     <v-main>
+      <Breadcrumbs/>
       <!-- v-container组件 加 fill-height属性 实现垂直居中 -->
       <v-container>
-        <Breadcrumbs/>
         <v-scroll-x-transition mode="out-in">
           <router-view/>
         </v-scroll-x-transition>
