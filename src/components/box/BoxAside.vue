@@ -12,7 +12,7 @@
 
     <v-divider/>
 
-    <AsideMenu :menu="require('@/assets/mock/aside-menu.json')"/>
+    <AsideRouteMenu/>
 
     <template v-slot:append>
       <BoxFooter/>
@@ -24,13 +24,13 @@
 import {mapMutations} from 'vuex'
 
 import BoxFooter from './BoxFooter'
-import AsideMenu from "./AsideMenu"
+import AsideRouteMenu from "./AsideRouteMenu"
 
 export default {
   name: 'BoxAside',
   components: {
     BoxFooter,
-    AsideMenu
+    AsideRouteMenu
   },
   data: () => ({
   }),

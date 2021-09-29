@@ -67,7 +67,12 @@
 <script>
 export default {
   name: "AsideMenu",
-  props: ['menu']
+  // props: ['menu'],
+  computed: {
+    menu() {
+      return require('@/assets/mock/aside-menu.json')
+    }
+  }
 }
 </script>
 

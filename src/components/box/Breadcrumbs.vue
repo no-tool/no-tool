@@ -13,7 +13,7 @@ export default {
     breadcrumbItems() {
       return _.map(this.$route.matched, (item) => {
         return {
-          text: item.meta.name || item.name,
+          text: item.meta.title || item.name,
           disabled: _.isEqual(this.$route.path, item.path),
           href: item.path
         }
