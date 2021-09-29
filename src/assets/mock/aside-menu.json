@@ -43,6 +43,18 @@
             "level": 3
           }
         ]
+      },
+      {
+        "path": "/tool/math/format-conversion",
+        "title": "格式转换",
+        "level": 2,
+        "children": [
+          {
+            "path": "/tool/math/format-conversion/time",
+            "title": "时间",
+            "level": 3
+          }
+        ]
       }
     ]
   },

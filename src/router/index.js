@@ -4,7 +4,7 @@ import Home from '../views/Home'
 
 Vue.use(VueRouter)
 
-const routes = [
+export const routes = [
     {
         path: '/',
         meta: {name: '首页'},
@@ -54,6 +54,21 @@ const routes = [
                                     liveOn: '2021-09-25'
                                 },
                                 component: () => import('@/views/tool/math/calc/WordComb')
+                            }
+                        ]
+                    },
+                    {
+                        path: 'format-conversion',
+                        meta: {name: '格式转换'},
+                        component: () => import('@/views/tool-view/Level2'),
+                        children: [
+                            {
+                                path: 'time',
+                                meta: {
+                                    name: '时间',
+                                    liveOn: '2021-09-29'
+                                },
+                                component: () => import('@/views/tool/math/format-conversion/Time')
                             }
                         ]
                     }
