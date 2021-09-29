@@ -27,7 +27,10 @@ const routes = [
                         children: [
                             {
                                 path: 'get-a-user',
-                                meta: {name: '获取一个用户'},
+                                meta: {
+                                    name: '获取一个用户',
+                                    liveOn: '2021-09-24'
+                                },
                                 component: () => import('@/views/tool/github/user/GetAUser')
                             }
                         ]
@@ -46,7 +49,10 @@ const routes = [
                         children: [
                             {
                                 path: 'word-comb',
-                                meta: {name: '字符组合'},
+                                meta: {
+                                    name: '字符组合',
+                                    liveOn: '2021-09-25'
+                                },
                                 component: () => import('@/views/tool/math/calc/WordComb')
                             }
                         ]

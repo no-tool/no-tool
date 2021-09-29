@@ -1,0 +1,1 @@
+export const LIVE_ON_PATTERN = 'YYYY-MM-DD'

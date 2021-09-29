@@ -4,11 +4,13 @@
     <BoxHeader/>
     <v-main>
       <Breadcrumbs/>
+      <v-divider/>
       <!-- v-container组件 加 fill-height属性 实现垂直居中 -->
       <v-container>
         <v-scroll-x-transition mode="out-in">
           <router-view/>
         </v-scroll-x-transition>
+        <ToolFooter/>
       </v-container>
     </v-main>
   </v-app>
@@ -18,6 +20,7 @@
 import BoxAside from './BoxAside'
 import BoxHeader from './BoxHeader'
 import Breadcrumbs from "./Breadcrumbs"
+import ToolFooter from "../ToolFooter"
 
 export default {
   name: "Box",
@@ -25,7 +28,8 @@ export default {
   components: {
     BoxAside,
     BoxHeader,
-    Breadcrumbs
+    Breadcrumbs,
+    ToolFooter
   }
 }
 </script>

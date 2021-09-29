@@ -11,6 +11,7 @@
         :loading="loading"
     />
     <v-virtual-scroll
+        v-if="isShowVirtualScroll"
         :items="wordList"
         :height="virtualScrollHeight"
         item-height="20"
@@ -38,8 +39,11 @@ export default {
     wordList: []
   }),
   computed: {
+    isShowVirtualScroll() {
+      return !_.isEmpty(this.wordList)
+    },
     virtualScrollHeight() {
-      return this.$vuetify.breakpoint.height - 158
+      return this.$vuetify.breakpoint.height - 252
     },
     combinations() {
       if (this.text) {
