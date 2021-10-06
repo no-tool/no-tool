@@ -48,7 +48,7 @@ export default {
     combinations() {
       if (this.text) {
         const combinations = calculateCombinations(this.text)
-        return `共有 ${combinations} 种组合 ${combinations > 5040 ? '(大于7位不同字符组合的运算可能会使您的设备崩溃)' : ''}`
+        return `共有 ${combinations} 种组合 ${combinations > 5040 ? '(大于7位不同字符组合的运算可能会使您的浏览器崩溃)' : ''}`
       }
       return ''
     }

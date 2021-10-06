@@ -18,7 +18,8 @@
     "vue-m-message": "^3.1.0",
     "vue-router": "^3.5.2",
     "vuetify": "^2.5.8",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "xmorse": "^1.0.0"
   },
   "devDependencies": {
     "@mdi/font": "^6.1.95",

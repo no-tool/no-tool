@@ -8506,6 +8506,11 @@ ws@^6.0.0, ws@^6.2.1:
   dependencies:
     async-limiter "~1.0.0"
 
+xmorse@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/xmorse/download/xmorse-1.0.0.tgz#177f4bedb079954ec02f4689b75d5fb191ecf16d"
+  integrity sha1-F39L7bB5lU7AL0aJt11fsZHs8W0=
+
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
   resolved "https://registry.npm.taobao.org/xtend/download/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"

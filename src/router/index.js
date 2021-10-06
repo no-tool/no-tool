@@ -65,16 +65,25 @@ export const routes = [
                 path: 'format-conversion',
                 meta: {title: '格式转换'},
                 component: () => import('@/views/tool-view/Level2'),
-                children: [
-                    {
-                        path: 'time',
-                        meta: {
-                            title: '时间',
-                            liveOn: '2021-09-29'
-                        },
-                        component: () => import('@/views/tool/math/format-conversion/Time')
-                    }
-                ]
+                children: []
+            }
+        ]
+    },
+    {
+        path: '/enc',
+        meta: {
+            title: '编码加密',
+            mdi: 'mdi-lock-check'
+        },
+        component: () => import('@/views/tool-view/Level1'),
+        children: [
+            {
+                path: 'morse',
+                meta: {
+                    title: '摩斯密码',
+                    liveOn: '2021-10-06'
+                },
+                component: () => import('@/views/tool/enc/morse')
             }
         ]
     },
