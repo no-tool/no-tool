@@ -1,10 +1,18 @@
 <template>
-  <router-view/>
+  <div>
+    <LevelPool/>
+    <router-view/>
+  </div>
 </template>
 
 <script>
+import LevelPool from "@/components/LevelPool"
+
 export default {
-  name: "Level1"
+  name: 'Level1',
+  components: {
+    LevelPool
+  }
 }
 </script>
 

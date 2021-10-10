@@ -65,14 +65,13 @@
 </template>
 
 <script>
-import {routes} from "@/router"
 import _ from 'lodash'
 
 export default {
   name: "AsideMenu",
   computed: {
     routes() {
-      return _.filter(routes, (item) => {
+      return _.filter(this.$router.options.routes, item => {
         return !_.isEqual('*', item.path)
       })
     }

@@ -4,7 +4,7 @@ import Home from '../views/Home'
 
 Vue.use(VueRouter)
 
-export const routes = [
+const routes = [
     {
         path: '/',
         meta: {
