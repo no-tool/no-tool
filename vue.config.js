@@ -1,7 +1,6 @@
 module.exports = {
-    // publicPath: process.env.NODE_ENV === 'production'
-    //     ? './'
-    //     : '/',
+    // publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+    // outputDir: "D:\\dev\\github_repo\\no-tool\\no-tool.github.io", // 构建时输出目录 默认dist
     lintOnSave: false,
     devServer: {
         proxy: {
