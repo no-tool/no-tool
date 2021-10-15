@@ -25,22 +25,26 @@ export default {
   },
   computed: {
     notFinal() {
-      return false
+      return true
     },
     r() {
-      const toolRoutes = _.filter(this.$router.options.routes, item => {
-        return !_.isEqual('*', item.path) && !_.isEqual('/', item.path)
-      })
       let routes = {
-        children: toolRoutes
-      };
-      const route = this.$route.matched;
-      for (let i = 0; i < route.length - 1; i++) {
-        routes = routes.children.find((e) => (e.name === route[i].name));
+        children: _.filter(this.$router.options.routes, item => {
+          return !_.isEqual('*', item.path) && !_.isEqual('/', item.path)
+        })
       }
+      const paths = this.$route.path.replace('/', '').split('/')
+      paths.forEach(path => {
+        routes.children.forEach(c => {
+          if (_.isEqual(c.path.replace('/', ''), path)) {
+            routes.children = c.children
+          }
+        })
+      })
       console.log(routes.children)
+      console.log(this.$route)
     }
-  }
+  },
 }
 </script>
 
