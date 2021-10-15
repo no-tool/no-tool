@@ -83,7 +83,7 @@ const routes = [
                     title: '摩斯密码',
                     liveOn: '2021-10-06'
                 },
-                component: () => import('@/views/tool/enc/morse')
+                component: () => import('@/views/tool/enc/Morse')
             }
         ]
     },

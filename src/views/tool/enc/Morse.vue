@@ -66,7 +66,7 @@ import {encode, decode} from 'xmorse'
 
 
 export default {
-  name: "morse",
+  name: "Morse",
   data: () => ({
     input: '支持中文',
     space: '/',

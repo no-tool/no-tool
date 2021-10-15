@@ -1,7 +1,16 @@
 <template>
   <v-breadcrumbs
       :items="breadcrumbItems"
-  ></v-breadcrumbs>
+  >
+<!--    <template v-slot:item="{ item }">-->
+<!--      <v-breadcrumbs-item-->
+<!--          :to="item.to"-->
+<!--          :disabled="item.disabled"-->
+<!--      >-->
+<!--        {{ item.text }}-->
+<!--      </v-breadcrumbs-item>-->
+<!--    </template>-->
+  </v-breadcrumbs>
 </template>
 
 <script>
@@ -13,9 +22,10 @@ export default {
     breadcrumbItems() {
       return _.map(this.$route.matched, (item) => {
         return {
+          exact: true,
           text: item.meta.title || item.name,
           disabled: _.isEqual(this.$route.path, item.path),
-          href: item.path
+          to: item.path
         }
       })
     },
