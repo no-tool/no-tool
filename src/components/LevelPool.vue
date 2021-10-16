@@ -11,6 +11,7 @@
           </router-link>
         </v-col>
       </v-row>
+      <v-divider class="mt-4"/>
     </div>
     <v-row v-else>
       <v-col cols="12" lg="6" v-for="(last, index) in children" :key="index">
@@ -45,8 +46,6 @@ export default {
           }
         })
       })
-      console.log(children)
-      console.log(this.$route)
       return children
     }
   },
